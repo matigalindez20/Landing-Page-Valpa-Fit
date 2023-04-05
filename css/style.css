@@ -6,13 +6,43 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-image: linear-gradient(rgb(153, 235, 116), rgb(95, 93, 93));
+    background-repeat: no-repeat;
 }
 
+.conteiner-nav{
+    display: grid;
+    width: 100%;
+    height: 15vh;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: 
+    "img-nav li-nav li-nav li-nav li-nav li-nav li-nav insta "
+    ;
+}
+
+.img-nav{
+    grid-area: img-nav;
+}
+
+.li-nav{
+    grid-area: li-nav;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    text-align: center;
+    align-items: center;
+}
+
+.ul-nav{
+    display: flex;
+    
+}
+
+/*
 header{
     background-color: rgb(153, 235, 116);
     display: flex;
     justify-content: space-between;
 }
+*/
 
 .nav-1{
     list-style: none;
@@ -28,6 +58,7 @@ header{
     position: relative;
     letter-spacing: 0.5px;
     padding: 0 10px;
+    list-style: none;
 }
 
 .list-1::after{
@@ -52,7 +83,7 @@ header{
 }
 
 .logo-1{
-    width: 30%;
+    
     margin: 10px 10px;
     transition: 1s;
 }
@@ -71,7 +102,8 @@ header{
     transition: 1s;
     display: flex;
     justify-content: space-evenly;
-    gap: 0px;
+    gap: 5px;
+    grid-area: insta;
 }
 
 .insta-1{
@@ -162,4 +194,54 @@ footer{
     height: 80%;
     width: 300px;
     margin: auto auto;
+}
+
+.conteiner-grid{
+    width: 100%;
+    height: 74vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "card-11 card-22"
+    "card-11 card-22"
+    "card-11 card-22"
+    ;
+}
+
+.card-11{
+    grid-area: card-11;
+    border: 2px black solid;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    grid-column-start: 0;
+    grid-column-end:1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.card-22{
+    grid-area: card-22;
+    border: 2px black solid;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end:3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.button-1{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    margin: auto auto;
+    
+}
+
+.button-2{
+    margin: 2%;
 }
