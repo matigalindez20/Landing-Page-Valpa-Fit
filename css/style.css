@@ -158,6 +158,7 @@ header{
 .titulo-final{
     font-family: 'Montserrat', sans-serif;
     padding: 10px;
+    align-content: end;
 }
 
 .contacto-final{
@@ -168,16 +169,35 @@ header{
 
 footer{
     background-color: rgb(95, 93, 93);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+      display: grid;
+    width: 100%;
+    height: 15vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "info-contactos pic-final title-final"
+    ;
     
 }
 
+.info-contactos{
+    grid-area: info-contactos;
+}
+
+.pic-final{
+    grid-area: pic-final;
+    margin: auto auto;
+    justify-self: center;
+}
+
+.title-final{
+    grid-area: title-final;
+    justify-self: end;
+}
+
 .logo-2{
-    width: 30%;
+    width: 55%;
     border-radius: 70%;
-    margin: 10px 10px;
+    align-content: center;
 }
 
 .conteiner-1{
