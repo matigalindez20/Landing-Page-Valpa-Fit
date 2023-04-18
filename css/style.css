@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto+Slab&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
 
 body{
     margin: 0;
@@ -231,9 +231,13 @@ footer{
 }
 
 .card-11{
-    color: white;
+    color: rgb(0, 0, 0);
     box-shadow: 2px 2px 2px 2px rgb(66, 136, 66);
-    background-color: black;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image:  radial-gradient(#4cad52 0.5px, transparent 0.5px), radial-gradient(#4cad52 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
     grid-area: card-11;
     border: 2px black solid;
     border-radius: 20px;
@@ -251,8 +255,12 @@ footer{
 }
 
 .card-22{
-    color: white;
-    background-color: black;
+    color: rgb(0, 0, 0);
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image:  radial-gradient(#4cad52 0.5px, transparent 0.5px), radial-gradient(#4cad52 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
     box-shadow: 2px 2px 2px 2px rgb(66, 136, 66);
     grid-area: card-22;
     border: 2px black solid;
@@ -276,10 +284,200 @@ footer{
     flex-direction: column;
     width: 30%;
     justify-content: center;
-    margin: auto auto;
-    
+    margin: auto auto; 
 }
 
 .button-2{
     margin: 2%;
 }
+
+
+.li-2{
+    list-style: none;
+}
+
+.conteiner-imags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.img-galeria{
+    width: 20%;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    padding: 20px;
+    margin: auto auto;
+}
+
+.button-nav{
+    justify-self: center;
+    grid-area: button-nav;
+    display: none;
+}
+
+.button-nav1{
+    display: none;
+}
+
+@media screen and (max-width: 550px){
+
+    .insta{
+        display: none;
+    }
+
+
+   .conteiner-nav{
+    display: grid;
+    width: 100%;
+    height: 15vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "img-nav button-nav"
+    ;
+   }
+
+   .button-nav{
+    justify-self: end;
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+   }
+
+    .li-nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(18, 37, 37);
+        box-shadow: 0 0 0 100vmax (0, 0, 0, .5);
+    }
+
+    .li-nav .visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .ul-nav{
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+    }
+    .nav-2{
+        color: white;
+    }
+}
+
+.form{
+    font-family: 'Bree Serif', serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image:  radial-gradient(#4cad52 0.5px, transparent 0.5px), radial-gradient(#4cad52 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: auto auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 100px auto 100px auto;
+    width: 90%;
+    max-width: 400px;
+    height: 200px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+}
+
+.form-card{
+    width: 90%;
+    max-width: 400px;
+}
+
+.form-title{
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+
+.form-p{
+    font-weight: 300;
+    
+}
+
+.form-link{
+    font-weight: 400;
+    color: black;
+}
+
+.form-conteiner{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+
+.form-group{
+    position: relative;
+ 
+    --color: #5757577e;
+}
+
+.form-input{
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: rgb(84, 84, 240);
+}
+
+.form-label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transfrom .5s, var(--color) .3s;
+}
+
+.form-submit{
+    background-color: #3866f2;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+
+.form-line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #3866f2;
+}
+

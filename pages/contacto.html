@@ -13,7 +13,9 @@
         <div class="img-nav"> 
             <a href="../index.html"><img src="../assets/logo-prin.png" alt="" class="logo-1"></a>
         </div>
-        <div class="li-nav">
+        <button class="button-nav" id="abrir"><i class="fa-solid fa-bars"></i></button>
+        <div class="li-nav" id="li-anv">
+            <button class="button-nav1" id="cerrar">Cerrar</button>
             <ul class="ul-nav">
                 <li class="list-1"><a href="../pages/tienda.html" class="nav-2">Tienda</a></li>
                 <li class="list-1"><a href="../pages/clases.html" class="nav-2">Clases</a></li>
@@ -26,40 +28,39 @@
             <a href="" class="insta-2"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
     </header>
-        <section class="conteiner-3">
-            <form action="" method="">
-                <fieldset class="conteiner-4">
-                    <legend>Datos Personales</legend>
-                    <label for="nombre"></label>
-                    <span>Nombre:</span>
-                    <input type="text" id="nombre" placeholder="Ingrese su nombre" class="insert">
-                    <label for="apellido"></label>
-                    <span>Apellido:</span>
-                    <input type="text" id="apellido" placeholder="Ingrese su apellido" class="insert">
-                    <label for="mail"></label>
-                    <span>Mail:</span>
-                    <input type="text" id="mail" placeholder="Ingese su mail" class="insert">
-                    <br>
-                    <label for="dni"></label>
-                    <span>DNI:</span>
-                    <input type="number" id="dni" placeholder="Ingrese su docuemento" class="insert">
-                    <label for="celular"></label>
-                    <span>Celular:</span>
-                    <input type="tel" id="celular" placeholder="Ingrese su num celular" class="insert">
-                    <label for="direccion"></label>
-                    <span>Direccion:</span>
-                    <input type="text" id="direccion" placeholder="Ingrese su direción" class="insert">
-                    <br>
-                    <input type="submit">
-                </fieldset>
-            </form>
-        </section>
+    <main>
+        <form action="" class="form">
+            <div class="form-card">
+                <h2 class="form-title">Inciar Sesion</h2>
+                <p class="form-p">Aún no tienes cuenta?<a href="#" class="form-link">Entra aquí</a></p>
+
+                <div class="form-conteiner">
+                    <div class="form-group">
+                        <input type="text" id="name" class="form-input" placeholder=" ">
+                        <label for="name" class="form-label">Nombre</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="user" class="form-input" placeholder=" ">
+                        <label for="user" class="form-label">Usario</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="password" class="form-input" placeholder=" ">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <span class="form-line"></span>
+                    </div>
+
+                    <input type="submit" class="form-submit" value="Entrar">
+                </div>
+            </div>
+        </form>
     </main>
     <footer>
         <section class="info-contactos">
-            <ul>
-                <li>Tel: 3512066602</li>
-                <li>Mail: matiasgalindez20@gmail.com</li>
+            <ul class="contacto-final">
+                <li><i class="fa-solid fa-phone"></i> 3512066602    </li>
+                <li><i class="fa-solid fa-envelope"></i> matiasgalindez20@gmail.com</li>
             </ul>
         </section>
         <div class="pic-final">

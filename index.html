@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/0c19aa0a31.js" crossorigin="anonymous"></script>
     <title>Valparaiso Fitness</title>
@@ -13,7 +14,9 @@
         <div class="img-nav"> 
             <a href="./index.html"><img src="./assets/logo-prin.png" alt="" class="logo-1"></a>
         </div>
-        <div class="li-nav">
+        <button class="button-nav" id="abrir"><i class="fa-solid fa-bars"></i></button>
+        <div class="li-nav" id="li-anv">
+            <button class="button-nav1" id="cerrar">Cerrar</button>
             <ul class="ul-nav">
                 <li class="list-1"><a href="./pages/tienda.html" class="nav-2">Tienda</a></li>
                 <li class="list-1"><a href="./pages/clases.html" class="nav-2">Clases</a></li>
@@ -36,8 +39,8 @@
     <footer>
         <section class="info-contactos">
             <ul class="contacto-final">
-                <li>Tel: 3512066602</li>
-                <li>Mail: matiasgalindez20@gmail.com</li>
+                <li><i class="fa-solid fa-phone"></i> 3512066602    </li>
+                <li><i class="fa-solid fa-envelope"></i> matiasgalindez20@gmail.com</li>
             </ul>
         </section>
         <div class="pic-final">
@@ -47,5 +50,6 @@
             <h2 class="titulo-final">Valparaiso Fitness</h2>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
