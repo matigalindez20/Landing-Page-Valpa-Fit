@@ -247,6 +247,10 @@ footer{
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-11:hover{
@@ -271,6 +275,10 @@ footer{
     grid-column-end:8;
     grid-row-start: 2;
     grid-row-end: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-22:hover{
@@ -294,20 +302,6 @@ footer{
 
 .li-2{
     list-style: none;
-}
-
-.conteiner-imags{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.img-galeria{
-    width: 20%;
-    border-radius: 50%;
-    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
-    padding: 20px;
-    margin: auto auto;
 }
 
 .button-nav{
@@ -481,3 +475,63 @@ footer{
     background-color: #3866f2;
 }
 
+.linea{
+    border-top: 5px solid #0077c0;
+    margin-bottom: 40px;
+}
+
+.conteiner-img{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+
+.conteiner-img .imgs{
+    width: 32%;
+    position: relative;
+    height: 250px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgb(0, 0, 0, .75);
+}
+
+.imgs img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(63, 92, 60, 0.781);
+    width: 100%;
+    height: 0;
+    transition: .5 ease;
+    overflow: hidden;
+    
+}
+
+.overlay h2{
+    color: white;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imgs:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+}
+
+.imgs:hover{
+    height: 100%;
+}
