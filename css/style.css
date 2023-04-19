@@ -617,3 +617,7 @@ footer{
     height: 100%;
     cursor: pointer;
 }
+
+#ancla-footer{
+    text-decoration: none;
+}
